@@ -37,6 +37,7 @@
 .buckd
 buck-out
 buckaroo
+buckaroo_macros.bzl
 
 buckaroo-linux
 buckaroo-macos

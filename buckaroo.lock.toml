@@ -1,0 +1,9 @@
+manifest = "e1a40a8a15ec24e2addc9d2273b9a94859182b2b95f175db467e97c778a2f6f9"
+
+[[dependency]]
+package = "github.com/buckaroo-pm/host-pthread"
+target = "//:pthread"
+
+[lock."github.com/buckaroo-pm/host-pthread"]
+version = "branch=master"
+revision = "a62519aa69c8e3243d6065fbf4c1d2de072f86f6"

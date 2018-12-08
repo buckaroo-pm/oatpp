@@ -1,1 +1,6 @@
 targets = [ "//:oatpp" ]
+
+[[dependency]]
+package = "github.com/buckaroo-pm/host-pthread"
+version = "branch=master"
+private = true

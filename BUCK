@@ -1,4 +1,5 @@
 load('//:subdir_glob.bzl', 'subdir_glob')
+load('//:buckaroo_macros.bzl', 'buckaroo_deps_from_package')
 
 cxx_library(
   name = 'oatpp', 
@@ -23,6 +24,9 @@ cxx_library(
     'parser/**/*.cpp', 
     'web/**/*.cpp', 
   ]), 
+  platform_deps = [
+    ('linux.*', buckaroo_deps_from_package('github.com/buckaroo-pm/host-pthread')), 
+  ], 
   visibility = [
     'PUBLIC', 
   ], 
